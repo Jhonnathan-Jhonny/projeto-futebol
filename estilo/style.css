@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/BebasKai.otf) format(opentype);
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#D6D58E;
+    --cor1:#DBF227;
+    --cor2:#9FC131;
+    --cor3:#005C53;
+    --cor4:#042940;
+
+    --font-padrao: Arial, Helvetica,Verdana, sans-serif;
+    --font-bebas: 'Bebas', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-image: linear-gradient(90deg , var(--cor3), var(--cor2));
+    height: 250px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    padding: 25px;
+    padding-top: 25px;
+    font-family: var(--font-bebas);
+    font-size: 4em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+}
+
+header > p {
+    font-size: 1.3em;
+    color: white;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 15px;
+}
+
+nav > a {
+    color: var(--cor4);
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.308);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+nav > a:active {
+    color: var(--cor0);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 800px;
+    min-width: 250px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 31%);
+    margin-bottom: 40px;
+}
+
+main h1 {
+    color: var(--cor4);
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--font-bebas);
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.308);
+}
+
+main h2 {
+    background-image: linear-gradient(90deg, var(--cor3), transparent);
+    color: var(--cor2);
+    margin: 15px;
+    font-family: var(--font-bebas);
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px;
+    line-height: 30px;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main strong {
+    color: var(--cor3);
+}
+
+main aside {
+    background-color: var(--cor3);
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+main aside > h1 {
+    color: white;
+    font-family: var(--font-bebas);
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+main aside > ul {
+    font-size: 18px;
+    list-style-type: '\1F3C6\00A0\00A0';  
+    list-style-position: inside;
+}
+
+main aside > p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px 0px -20px 0px;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 53.7%;
+    position: relative;
+}    
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.jogador  img {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--cor3);
+}
+
+footer  a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
