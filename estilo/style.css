@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-image: url('../imagens/footballs.jpg');
     font-family: var(--font-padrao);
 }
 
