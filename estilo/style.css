@@ -23,8 +23,11 @@
 }
 
 body {
-    background-image: url('../imagens/footballs.jpg');
+    background-image: url('../imagens/bola.png');
     font-family: var(--font-padrao);
+
+    background-size: 200px;
+
 }
 
 header {
