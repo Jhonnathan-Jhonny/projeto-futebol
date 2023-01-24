@@ -23,15 +23,18 @@
 }
 
 body {
-    background-image: url('../imagens/bola.png');
+    background-color: var(--cor0);
     font-family: var(--font-padrao);
-
     background-size: 200px;
 
 }
 
 header {
     background-image: linear-gradient(90deg , var(--cor3), var(--cor2));
+    background-image: url(../imagens/campo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 250px;
     text-align: center;
 }
